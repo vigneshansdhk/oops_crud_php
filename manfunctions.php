@@ -42,7 +42,6 @@ class Manfunctions extends DB
     {
         extract($_REQUEST);
         $query = "UPDATE user SET name = '$name',number= '$number',place='$place' WHERE id = $userid";
-        //  print_r($query); die;
         $result = mysqli_query($link, $query);
         if ($result) {
             echo "Data updated Successfully";
